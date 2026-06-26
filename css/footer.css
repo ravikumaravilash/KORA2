@@ -1,0 +1,123 @@
+@import url("variables.css");
+
+/* ===================================
+   FOOTER
+=================================== */
+
+.footer{
+
+background:#08140E;
+
+padding:80px 0 30px;
+
+border-top:1px solid rgba(255,255,255,.06);
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:2fr 1fr 1fr 1fr;
+
+gap:60px;
+
+}
+
+.footer-logo{
+
+font-size:2rem;
+
+font-weight:800;
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+}
+
+.footer p{
+
+color:var(--text-muted);
+
+margin-bottom:15px;
+
+}
+
+.footer h3{
+
+font-size:1.1rem;
+
+margin-bottom:20px;
+
+color:var(--gold);
+
+}
+
+.footer ul{
+
+list-style:none;
+
+}
+
+.footer li{
+
+margin-bottom:12px;
+
+}
+
+.footer a{
+
+color:var(--text-light);
+
+transition:.3s;
+
+}
+
+.footer a:hover{
+
+color:var(--gold);
+
+padding-left:6px;
+
+}
+
+.footer-bottom{
+
+margin-top:70px;
+
+padding-top:25px;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+color:var(--text-muted);
+
+font-size:.9rem;
+
+}
+
+@media(max-width:900px){
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+
+gap:15px;
+
+text-align:center;
+
+}
+
+}

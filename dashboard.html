@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>KORA Dashboard</title>
+
+<link rel="stylesheet"
+href="css/variables.css">
+
+<link rel="stylesheet"
+href="css/global.css">
+
+<link rel="stylesheet"
+href="css/navbar.css">
+
+<link rel="stylesheet"
+href="css/dashboard.css">
+
+<link rel="stylesheet"
+href="css/animations.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+TOP NAVBAR
+=========================== -->
+
+<nav class="navbar">
+
+<div class="logo">
+
+KORA
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="home.html">Home</a></li>
+
+<li><a href="ayurveda.html">Ayurveda</a></li>
+
+<li><a href="remedies.html">Remedies</a></li>
+
+<li><a href="therapy.html">Therapy</a></li>
+
+<li><a href="community.html">Community</a></li>
+
+<li><a href="about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+<!-- ===========================
+MAIN CONTAINER
+=========================== -->
+
+<div class="dashboard">
+
+<!-- ===========================
+SIDEBAR
+=========================== -->
+
+<aside class="sidebar">
+
+<div class="profile">
+
+<div class="avatar">
+
+A
+
+</div>
+
+<h3>
+
+Administrator
+
+</h3>
+
+<p>
+
+Welcome back
+
+</p>
+
+</div>
+
+<ul class="sidebar-menu">
+
+<li class="active">
+
+<a href="#overview">
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#therapy">
+
+Therapy
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#plants">
+
+Medicinal Plants
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#community">
+
+Community
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#consult">
+
+Consultation
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#settings">
+
+Settings
+
+</a>
+
+</li>
+
+</ul>
+
+</aside>
+
+<!-- ===========================
+CONTENT
+=========================== -->
+
+<main class="content">
+
+<section
+id="overview">
+
+<h1>
+
+Good Morning,
+
+Administrator
+
+</h1>
+
+<p>
+
+Monitor therapy sessions, explore Ayurveda,
+and manage rehabilitation progress.
+
+</p>
+
+<div class="dashboard-cards">
+
+<div class="dashboard-card">
+
+<h2
+data-target="500">
+
+0
+
+</h2>
+
+<p>
+
+Ayurvedic Remedies
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h2
+data-target="120">
+
+0
+
+</h2>
+
+<p>
+
+Medicinal Plants
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h2
+data-target="98">
+
+0
+
+</h2>
+
+<p>
+
+Recovery Success %
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h2
+data-target="2500">
+
+0
+
+</h2>
+
+<p>
+
+Community Members
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+THERAPY PANEL
+=========================== -->
+
+<section
+id="therapy">
+
+<div class="panel">
+
+<div class="panel-header">
+
+<h2>
+
+Smart Knee Therapy
+
+</h2>
+
+<span>
+
+ESP32 Connected
+
+</span>
+
+</div>
+
+<div class="therapy-grid">
+
+<div class="therapy-card">
+
+<h3>
+
+Therapy Controls
+
+</h3>
+
+<div class="therapy-buttons">
+
+<button
+id="gentleMode">
+
+Gentle Mode
+
+</button>
+
+<button
+id="pulseMode">
+
+Pulse Mode
+
+</button>
+
+<button
+id="deepMode">
+
+Deep Therapy
+
+</button>
+
+</div>
+
+<div
+class="connection-status">
+
+Status:
+
+<strong>
+
+Connected
+
+</strong>
+
+</div>
+
+</div>
+
+<div class="therapy-card">
+
+<h3>
+
+Today's Progress
+
+</h3>
+
+<div class="progress-circle">
+
+85%
+
+</div>
+
+<p>
+
+Today's rehabilitation target
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+MEDICINAL PLANTS
+=========================== -->
+
+<section
+id="plants">
+
+<h2>
+
+Recommended Plants
+
+</h2>
+
+<div class="plant-grid">
+
+<div class="plant-card">
+
+<img
+src="images/ashwagandha.jpg"
+alt="Ashwagandha">
+
+<h3>
+
+Ashwagandha
+
+</h3>
+
+<p>
+
+Traditionally used in Ayurveda and widely studied for its adaptogenic properties.
+
+</p>
+
+<a
+href="plants.html">
+
+View Profile
+
+</a>
+
+</div>
+
+<div class="plant-card">
+
+<img
+src="images/tulsi.jpg"
+alt="Tulsi">
+
+<h3>
+
+Tulsi
+
+</h3>
+
+<p>
+
+A revered medicinal herb in Ayurveda with a long history of traditional use.
+
+</p>
+
+<a
+href="plants.html">
+
+View Profile
+
+</a>
+
+</div>
+
+<div class="plant-card">
+
+<img
+src="images/neem.jpg"
+alt="Neem">
+
+<h3>
+
+Neem
+
+</h3>
+
+<p>
+
+Known in traditional Ayurvedic practice for a variety of wellness applications.
+
+</p>
+
+<a
+href="plants.html">
+
+View Profile
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===========================
+COMMUNITY
+=========================== -->
+
+<section id="community">
+
+<h2>
+
+Community Updates
+
+</h2>
+
+<div class="community-grid">
+
+<div class="community-card">
+
+<h3>
+
+Latest Discussion
+
+</h3>
+
+<p>
+
+Members are discussing traditional Ayurvedic rehabilitation techniques and modern therapy integration.
+
+</p>
+
+<a href="community.html">
+
+Read Discussion
+
+</a>
+
+</div>
+
+<div class="community-card">
+
+<h3>
+
+Newest Review
+
+</h3>
+
+<p>
+
+"The therapy interface is intuitive and easy to use. The educational content makes learning Ayurveda much more engaging."
+
+</p>
+
+<p class="author">
+
+— Community Member
+
+</p>
+
+</div>
+
+<div class="community-card">
+
+<h3>
+
+Knowledge Article
+
+</h3>
+
+<p>
+
+Explore how medicinal plants have evolved from ancient texts to modern scientific research.
+
+</p>
+
+<a href="ayurveda.html">
+
+Read Article
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+CONSULATION
+=========================== -->
+
+<section id="consult">
+
+<h2>
+
+Consultation
+
+</h2>
+
+<div class="consult-grid">
+
+<div class="consult-card">
+
+<h3>
+
+Book an Appointment
+
+</h3>
+
+<p>
+
+Connect with an Ayurvedic practitioner for educational guidance and wellness consultation.
+
+</p>
+
+<a class="btn btn-primary"
+
+href="consultation.html">
+
+Book Consultation
+
+</a>
+
+</div>
+
+<div class="consult-card">
+
+<h3>
+
+Available Specialists
+
+</h3>
+
+<ul>
+
+<li>Ayurvedic Wellness</li>
+
+<li>Rehabilitation Guidance</li>
+
+<li>Traditional Herbal Knowledge</li>
+
+<li>Lifestyle Consultation</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+RECENT ACTIVITY
+=========================== -->
+
+<section>
+
+<h2>
+
+Recent Activity
+
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h4>
+
+Therapy Session Completed
+
+</h4>
+
+<p>
+
+Deep Therapy mode completed successfully.
+
+</p>
+
+<span>
+
+Today
+
+</span>
+
+</div>
+
+<div class="timeline-item">
+
+<h4>
+
+New Plant Profile Added
+
+</h4>
+
+<p>
+
+Ashwagandha encyclopedia updated.
+
+</p>
+
+<span>
+
+Yesterday
+
+</span>
+
+</div>
+
+<div class="timeline-item">
+
+<h4>
+
+Community Discussion
+
+</h4>
+
+<p>
+
+Traditional massage techniques.
+
+</p>
+
+<span>
+
+2 Days Ago
+
+</span>
+
+</div>
+
+<div class="timeline-item">
+
+<h4>
+
+System Update
+
+</h4>
+
+<p>
+
+Improved therapy dashboard.
+
+</p>
+
+<span>
+
+This Week
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ===========================
+QUICK ACTIONS
+=========================== -->
+
+<section>
+
+<h2>
+
+Quick Actions
+
+</h2>
+
+<div class="quick-grid">
+
+<a class="quick-card"
+
+href="therapy.html">
+
+Therapy Dashboard
+
+</a>
+
+<a class="quick-card"
+
+href="plants.html">
+
+Medicinal Plants
+
+</a>
+
+<a class="quick-card"
+
+href="remedies.html">
+
+Remedy Library
+
+</a>
+
+<a class="quick-card"
+
+href="community.html">
+
+Community
+
+</a>
+
+<a class="quick-card"
+
+href="consultation.html">
+
+Consultation
+
+</a>
+
+<a class="quick-card"
+
+href="about.html">
+
+About KORA
+
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+</div>
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<div class="footer-logo">
+
+KORA
+
+</div>
+
+<p>
+
+Knowledge • Outreach • Rehabilitation • Ayurveda
+
+</p>
+
+</div>
+
+<div>
+
+<h4>
+
+Platform
+
+</h4>
+
+<ul>
+
+<li><a href="ayurveda.html">
+
+Ayurveda
+
+</a></li>
+
+<li><a href="plants.html">
+
+Medicinal Plants
+
+</a></li>
+
+<li><a href="remedies.html">
+
+Remedies
+
+</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4>
+
+Support
+
+</h4>
+
+<ul>
+
+<li><a href="consultation.html">
+
+Consultation
+
+</a></li>
+
+<li><a href="community.html">
+
+Community
+
+</a></li>
+
+<li><a href="about.html">
+
+About
+
+</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h4>
+
+Contact
+
+</h4>
+
+<p>
+
+support@kora.ai
+
+</p>
+
+<p>
+
+Version 2.0
+
+</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+
+© 2026 KORA. All Rights Reserved.
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="js/counter.js"></script>
+
+<script src="js/navbar.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

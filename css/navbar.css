@@ -1,0 +1,157 @@
+@import url("variables.css");
+
+/* ==========================
+NAVBAR
+========================== */
+
+.navbar{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+
+height:var(--navbar-height);
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 6%;
+
+z-index:1000;
+
+background:rgba(7,20,13,.85);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
+transition:.4s;
+
+}
+
+/* ==========================
+LOGO
+========================== */
+
+.logo{
+
+font-size:2rem;
+
+font-weight:800;
+
+letter-spacing:2px;
+
+color:var(--gold);
+
+}
+
+/* ==========================
+MENU
+========================== */
+
+.nav-links{
+
+display:flex;
+
+list-style:none;
+
+gap:35px;
+
+}
+
+.nav-links li{
+
+position:relative;
+
+}
+
+.nav-links a{
+
+font-size:1rem;
+
+font-weight:500;
+
+color:var(--text);
+
+transition:.3s;
+
+padding:8px 0;
+
+}
+
+.nav-links a::after{
+
+content:"";
+
+position:absolute;
+
+bottom:-8px;
+left:0;
+
+width:0;
+
+height:2px;
+
+background:var(--gold);
+
+transition:.35s;
+
+}
+
+.nav-links a:hover{
+
+color:var(--gold);
+
+}
+
+.nav-links a:hover::after{
+
+width:100%;
+
+}
+
+/* ==========================
+LOGIN BUTTON
+========================== */
+
+.nav-btn{
+
+padding:12px 28px;
+
+background:var(--gold);
+
+border-radius:12px;
+
+color:#111;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.nav-btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+.nav-links{
+
+display:none;
+
+}
+
+}

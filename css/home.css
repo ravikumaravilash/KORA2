@@ -1,0 +1,1051 @@
+@import url("variables.css");
+
+/* ===========================================
+HOME HERO
+=========================================== */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+padding-top:var(--navbar-height);
+
+position:relative;
+
+overflow:hidden;
+
+background:
+
+radial-gradient(circle at top left,rgba(31,94,59,.25),transparent 35%),
+
+radial-gradient(circle at bottom right,rgba(212,175,55,.18),transparent 30%),
+
+linear-gradient(135deg,#07140D,#0B1F14,#11291D);
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:650px;
+
+height:650px;
+
+background:rgba(31,94,59,.18);
+
+filter:blur(140px);
+
+top:-250px;
+
+left:-200px;
+
+border-radius:50%;
+
+animation:float 12s infinite ease-in-out;
+
+}
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:450px;
+
+height:450px;
+
+background:rgba(212,175,55,.10);
+
+filter:blur(120px);
+
+right:-150px;
+
+bottom:-150px;
+
+border-radius:50%;
+
+animation:float 10s infinite reverse;
+
+}
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:1.3fr .8fr;
+
+gap:70px;
+
+align-items:center;
+
+position:relative;
+
+z-index:2;
+
+}
+
+/* ===========================================
+LEFT
+=========================================== */
+
+.hero-label{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:30px;
+
+font-size:.9rem;
+
+letter-spacing:1px;
+
+margin-bottom:30px;
+
+color:var(--gold);
+
+}
+
+.hero h1{
+
+font-size:4.7rem;
+
+font-weight:800;
+
+line-height:1.1;
+
+margin-bottom:30px;
+
+max-width:760px;
+
+}
+
+.hero h1 span{
+
+display:block;
+
+color:var(--gold);
+
+margin-top:10px;
+
+}
+
+.hero-description{
+
+font-size:1.15rem;
+
+line-height:2;
+
+max-width:720px;
+
+color:var(--text-light);
+
+margin-bottom:45px;
+
+}
+
+/* ===========================================
+BUTTONS
+=========================================== */
+
+.hero-buttons{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+/* ===========================================
+RIGHT PANEL
+=========================================== */
+
+.hero-card{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border-radius:28px;
+
+padding:45px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+}
+
+.hero-card h3{
+
+font-size:1.5rem;
+
+margin-bottom:35px;
+
+color:var(--gold);
+
+}
+
+.mini-stat{
+
+padding:18px 0;
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.mini-stat:last-child{
+
+border:none;
+
+}
+
+.mini-stat h2{
+
+font-size:2.6rem;
+
+color:var(--gold);
+
+margin-bottom:8px;
+
+}
+
+.mini-stat p{
+
+color:var(--text-light);
+
+}
+
+/* ===========================================
+SECTION TITLE
+=========================================== */
+
+.section-title{
+
+max-width:700px;
+
+margin:auto;
+
+text-align:center;
+
+margin-bottom:70px;
+
+}
+
+.section-title h2{
+
+font-size:3rem;
+
+margin-bottom:20px;
+
+}
+
+.section-title p{
+
+font-size:1.1rem;
+
+line-height:2;
+
+}
+
+/* ===========================================
+SERVICES
+=========================================== */
+
+.offer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:35px;
+
+}
+
+.offer-grid .card{
+
+padding:40px;
+
+transition:.4s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.offer-grid .card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:4px;
+
+height:0;
+
+background:var(--gold);
+
+transition:.4s;
+
+}
+
+.offer-grid .card:hover::before{
+
+height:100%;
+
+}
+
+.offer-grid .card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.offer-grid h3{
+
+margin-bottom:20px;
+
+font-size:1.5rem;
+
+color:var(--gold);
+
+}
+
+.offer-grid p{
+
+line-height:2;
+
+}
+
+/* ===========================================
+STATISTICS
+=========================================== */
+
+.statistics{
+
+background:#091710;
+
+}
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+}
+
+.stat-box{
+
+background:rgba(255,255,255,.04);
+
+padding:45px;
+
+text-align:center;
+
+border-radius:24px;
+
+transition:.35s;
+
+border:1px solid rgba(255,255,255,.06);
+
+}
+
+.stat-box:hover{
+
+transform:translateY(-8px);
+
+border-color:var(--gold);
+
+}
+
+.stat-box h2{
+
+font-size:3.4rem;
+
+color:var(--gold);
+
+margin-bottom:15px;
+
+}
+
+.stat-box p{
+
+font-size:1rem;
+
+color:var(--text-light);
+
+}
+
+/* ===========================================
+MISSION
+=========================================== */
+
+.mission{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+}
+
+.mission div{
+
+background:rgba(255,255,255,.04);
+
+padding:50px;
+
+border-radius:28px;
+
+border:1px solid rgba(255,255,255,.06);
+
+transition:.4s;
+
+}
+
+.mission div:hover{
+
+transform:translateY(-8px);
+
+}
+
+.mission h2{
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+}
+
+.mission p{
+
+line-height:2;
+
+}
+
+/* ===========================================
+RESPONSIVE
+=========================================== */
+
+@media(max-width:1100px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.offer-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.stats-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.mission{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:3.8rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.offer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.stats-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:3rem;
+
+}
+
+.hero-description{
+
+margin:auto;
+
+margin-bottom:40px;
+
+}
+
+}
+
+/* =====================================================
+SUCCESS STORIES
+===================================================== */
+
+.success-section{
+
+padding:120px 0;
+
+position:relative;
+
+}
+
+.success-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.success-card{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:28px;
+
+padding:35px;
+
+backdrop-filter:blur(20px);
+
+transition:.4s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.success-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:4px;
+
+background:linear-gradient(90deg,var(--gold),transparent);
+
+}
+
+.success-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 30px 60px rgba(0,0,0,.35);
+
+}
+
+.success-card h3{
+
+margin-bottom:15px;
+
+color:var(--gold);
+
+}
+
+.success-card p{
+
+line-height:1.9;
+
+}
+
+/* =====================================================
+REVIEWS
+===================================================== */
+
+.review-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+.review-card{
+
+background:rgba(255,255,255,.04);
+
+padding:35px;
+
+border-radius:24px;
+
+border:1px solid rgba(255,255,255,.06);
+
+transition:.35s;
+
+}
+
+.review-card:hover{
+
+transform:translateY(-8px);
+
+border-color:var(--gold);
+
+}
+
+.review-stars{
+
+font-size:1.2rem;
+
+letter-spacing:4px;
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+}
+
+.review-name{
+
+margin-top:20px;
+
+font-weight:700;
+
+font-size:1.1rem;
+
+}
+
+.review-role{
+
+font-size:.9rem;
+
+color:var(--text-muted);
+
+}
+
+/* =====================================================
+ABOUT STRIP
+===================================================== */
+
+.about-strip{
+
+padding:140px 0;
+
+text-align:center;
+
+max-width:1000px;
+
+margin:auto;
+
+}
+
+.about-strip h2{
+
+margin-bottom:25px;
+
+}
+
+.about-strip p{
+
+font-size:1.15rem;
+
+line-height:2.1;
+
+color:var(--text-light);
+
+}
+
+/* =====================================================
+CALL TO ACTION
+===================================================== */
+
+.cta{
+
+padding:140px 0;
+
+}
+
+.cta-box{
+
+background:
+
+linear-gradient(135deg,
+
+rgba(31,94,59,.92),
+
+rgba(20,59,38,.95));
+
+border-radius:35px;
+
+padding:90px;
+
+text-align:center;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.cta-box::before{
+
+content:"";
+
+position:absolute;
+
+width:350px;
+
+height:350px;
+
+background:rgba(212,175,55,.08);
+
+border-radius:50%;
+
+top:-120px;
+
+right:-120px;
+
+filter:blur(80px);
+
+}
+
+.cta h2{
+
+font-size:3rem;
+
+margin-bottom:25px;
+
+}
+
+.cta p{
+
+max-width:700px;
+
+margin:auto;
+
+margin-bottom:45px;
+
+line-height:2;
+
+}
+
+.cta-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+/* =====================================================
+FOOTER ENHANCEMENTS
+===================================================== */
+
+.footer{
+
+margin-top:140px;
+
+}
+
+.footer-logo{
+
+font-size:2rem;
+
+font-weight:800;
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:2fr 1fr 1fr 1fr;
+
+gap:60px;
+
+}
+
+.footer h4{
+
+margin-bottom:18px;
+
+}
+
+.footer ul{
+
+list-style:none;
+
+}
+
+.footer li{
+
+margin-bottom:14px;
+
+}
+
+.footer a{
+
+transition:.3s;
+
+}
+
+.footer a:hover{
+
+color:var(--gold);
+
+padding-left:6px;
+
+}
+
+/* =====================================================
+HOVER EFFECTS
+===================================================== */
+
+.card{
+
+transition:
+
+transform .35s,
+
+box-shadow .35s,
+
+border-color .35s;
+
+}
+
+.card:hover{
+
+box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+}
+
+/* =====================================================
+DECORATIVE LINES
+===================================================== */
+
+.section-title::after{
+
+content:"";
+
+display:block;
+
+width:90px;
+
+height:4px;
+
+background:var(--gold);
+
+margin:20px auto 0;
+
+border-radius:10px;
+
+}
+
+/* =====================================================
+SCROLL ANIMATIONS
+===================================================== */
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:1s;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* =====================================================
+BACKGROUND DECORATIONS
+===================================================== */
+
+.bg-circle{
+
+position:absolute;
+
+border-radius:50%;
+
+filter:blur(100px);
+
+opacity:.18;
+
+pointer-events:none;
+
+}
+
+.bg-circle.one{
+
+width:400px;
+
+height:400px;
+
+background:var(--primary);
+
+top:0;
+
+right:-100px;
+
+}
+
+.bg-circle.two{
+
+width:350px;
+
+height:350px;
+
+background:var(--gold);
+
+bottom:-100px;
+
+left:-120px;
+
+}
+
+/* =====================================================
+SMOOTH IMAGE EFFECT
+===================================================== */
+
+img{
+
+transition:.45s;
+
+}
+
+.card:hover img{
+
+transform:scale(1.05);
+
+}
+
+/* =====================================================
+RESPONSIVE
+===================================================== */
+
+@media(max-width:1000px){
+
+.review-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.cta-box{
+
+padding:60px 40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.success-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.cta h2{
+
+font-size:2.2rem;
+
+}
+
+.about-strip{
+
+padding:80px 0;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.cta-buttons{
+
+flex-direction:column;
+
+}
+
+.cta .btn{
+
+width:100%;
+
+}
+
+}

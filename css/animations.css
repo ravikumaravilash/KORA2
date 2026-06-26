@@ -1,0 +1,157 @@
+/* ===================================
+ANIMATIONS
+=================================== */
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes fadeLeft{
+
+0%{
+
+opacity:0;
+
+transform:translateX(-80px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+@keyframes fadeRight{
+
+0%{
+
+opacity:0;
+
+transform:translateX(80px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+
+@keyframes zoom{
+
+0%{
+
+opacity:0;
+
+transform:scale(.9);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes pulseGlow{
+
+0%{
+
+box-shadow:0 0 0 rgba(212,175,55,.2);
+
+}
+
+50%{
+
+box-shadow:0 0 45px rgba(212,175,55,.35);
+
+}
+
+100%{
+
+box-shadow:0 0 0 rgba(212,175,55,.2);
+
+}
+
+}
+
+.fade-up{
+
+animation:fadeUp 1s ease forwards;
+
+}
+
+.fade-left{
+
+animation:fadeLeft .9s ease forwards;
+
+}
+
+.fade-right{
+
+animation:fadeRight .9s ease forwards;
+
+}
+
+.zoom{
+
+animation:zoom .8s ease forwards;
+
+}
+
+.float{
+
+animation:float 6s ease-in-out infinite;
+
+}
