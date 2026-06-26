@@ -1,0 +1,1116 @@
+/* ==========================================================
+   KORA AYURVEDA PAGE
+========================================================== */
+
+:root{
+
+--primary:#0F3B2E;
+
+--secondary:#1A5C46;
+
+--gold:#D4AF37;
+
+--gold-light:#E8C96C;
+
+--dark:#07140D;
+
+--surface:rgba(255,255,255,.05);
+
+--border:rgba(255,255,255,.08);
+
+--text:#F4F4F4;
+
+--text-light:#C8D0CB;
+
+}
+
+body{
+
+background:
+linear-gradient(
+135deg,
+#07140D,
+#0C2216,
+#123523,
+#18442D
+);
+
+color:var(--text);
+
+overflow-x:hidden;
+
+}
+
+/* ==========================================================
+HERO
+========================================================== */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:120px 10%;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:700px;
+
+height:700px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(
+
+rgba(212,175,55,.12),
+
+transparent 70%
+
+);
+
+top:-200px;
+
+right:-150px;
+
+filter:blur(30px);
+
+}
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:500px;
+
+height:500px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(
+
+rgba(26,92,70,.18),
+
+transparent 70%
+
+);
+
+left:-180px;
+
+bottom:-180px;
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:900px;
+
+}
+
+.hero h1{
+
+font-size:5rem;
+
+font-weight:800;
+
+margin-bottom:20px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#ffffff,
+
+var(--gold)
+
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+.hero h3{
+
+font-size:2rem;
+
+font-weight:500;
+
+margin-bottom:30px;
+
+color:var(--gold);
+
+}
+
+.hero p{
+
+font-size:1.2rem;
+
+line-height:2;
+
+color:var(--text-light);
+
+margin-bottom:45px;
+
+}
+
+/* ==========================================================
+BUTTON
+========================================================== */
+
+.primary-btn{
+
+display:inline-block;
+
+padding:18px 40px;
+
+background:var(--gold);
+
+color:#07140D;
+
+font-weight:700;
+
+border-radius:14px;
+
+text-decoration:none;
+
+transition:.35s;
+
+}
+
+.primary-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+
+0 20px 45px
+
+rgba(212,175,55,.35);
+
+}
+
+/* ==========================================================
+SECTIONS
+========================================================== */
+
+.section{
+
+padding:110px 10%;
+
+position:relative;
+
+}
+
+.section h2{
+
+font-size:3rem;
+
+margin-bottom:35px;
+
+position:relative;
+
+display:inline-block;
+
+}
+
+.section h2::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+
+bottom:-12px;
+
+width:70px;
+
+height:4px;
+
+background:var(--gold);
+
+border-radius:10px;
+
+}
+
+.section p{
+
+font-size:1.1rem;
+
+line-height:2;
+
+max-width:950px;
+
+color:var(--text-light);
+
+}
+
+/* ==========================================================
+TIMELINE
+========================================================== */
+
+.timeline{
+
+margin-top:70px;
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(260px,1fr));
+
+gap:35px;
+
+}
+
+.timeline-card{
+
+padding:35px;
+
+background:var(--surface);
+
+border-radius:24px;
+
+border:1px solid var(--border);
+
+backdrop-filter:blur(18px);
+
+transition:.4s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.timeline-card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:5px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+var(--gold),
+
+transparent
+
+);
+
+}
+
+.timeline-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+
+0 25px 55px
+
+rgba(0,0,0,.35);
+
+}
+
+.timeline-card h3{
+
+color:var(--gold);
+
+font-size:1.7rem;
+
+margin-bottom:20px;
+
+}
+
+.timeline-card p{
+
+font-size:1rem;
+
+line-height:1.8;
+
+}
+
+/* ==========================================================
+DOSHA CARDS
+========================================================== */
+
+.cards{
+
+margin-top:70px;
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:var(--surface);
+
+border-radius:26px;
+
+padding:40px;
+
+border:1px solid var(--border);
+
+transition:.35s;
+
+backdrop-filter:blur(16px);
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+border-color:
+
+rgba(212,175,55,.5);
+
+}
+
+.card h3{
+
+font-size:2rem;
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+}
+
+.card p{
+
+font-size:1rem;
+
+line-height:1.8;
+
+}
+/* ==========================================================
+EIGHT BRANCHES
+========================================================== */
+
+.grid{
+
+margin-top:60px;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+}
+
+.grid div{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:24px;
+
+padding:35px;
+
+text-align:center;
+
+font-size:1.05rem;
+
+font-weight:600;
+
+transition:.35s;
+
+backdrop-filter:blur(16px);
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.grid div::before{
+
+content:"";
+
+position:absolute;
+
+left:-100%;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.08),
+
+transparent
+
+);
+
+transition:.6s;
+
+}
+
+.grid div:hover::before{
+
+left:100%;
+
+}
+
+.grid div:hover{
+
+transform:translateY(-8px);
+
+border-color:var(--gold);
+
+box-shadow:0 20px 45px rgba(0,0,0,.30);
+
+}
+
+/* ==========================================================
+MODERN HEALTHCARE SECTION
+========================================================== */
+
+.section:nth-of-type(5){
+
+position:relative;
+
+}
+
+.section:nth-of-type(5)::before{
+
+content:"";
+
+position:absolute;
+
+right:0;
+
+top:50px;
+
+width:280px;
+
+height:280px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(
+
+rgba(212,175,55,.10),
+
+transparent 70%
+
+);
+
+filter:blur(20px);
+
+}
+
+/* ==========================================================
+PLANT ENCYCLOPEDIA CTA
+========================================================== */
+
+.section .primary-btn{
+
+margin-top:35px;
+
+}
+
+.section .primary-btn:hover{
+
+background:var(--gold-light);
+
+}
+
+/* ==========================================================
+PRESERVATION SECTION
+========================================================== */
+
+.final{
+
+text-align:center;
+
+}
+
+.final p{
+
+margin:0 auto;
+
+max-width:900px;
+
+}
+
+/* ==========================================================
+FLOATING DECORATION
+========================================================== */
+
+.section::after{
+
+content:"";
+
+position:absolute;
+
+right:-120px;
+
+bottom:-120px;
+
+width:260px;
+
+height:260px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(
+
+rgba(26,92,70,.18),
+
+transparent 70%
+
+);
+
+pointer-events:none;
+
+}
+
+/* ==========================================================
+SCROLL ANIMATION
+========================================================== */
+
+.hero-content,
+
+.section,
+
+.timeline-card,
+
+.card,
+
+.grid div{
+
+opacity:0;
+
+transform:translateY(40px);
+
+animation:fadeUp .8s ease forwards;
+
+}
+
+.timeline-card:nth-child(2){
+
+animation-delay:.15s;
+
+}
+
+.timeline-card:nth-child(3){
+
+animation-delay:.30s;
+
+}
+
+.timeline-card:nth-child(4){
+
+animation-delay:.45s;
+
+}
+
+.card:nth-child(2){
+
+animation-delay:.15s;
+
+}
+
+.card:nth-child(3){
+
+animation-delay:.30s;
+
+}
+
+.grid div:nth-child(2){
+
+animation-delay:.10s;
+
+}
+
+.grid div:nth-child(3){
+
+animation-delay:.20s;
+
+}
+
+.grid div:nth-child(4){
+
+animation-delay:.30s;
+
+}
+
+.grid div:nth-child(5){
+
+animation-delay:.40s;
+
+}
+
+.grid div:nth-child(6){
+
+animation-delay:.50s;
+
+}
+
+.grid div:nth-child(7){
+
+animation-delay:.60s;
+
+}
+
+.grid div:nth-child(8){
+
+animation-delay:.70s;
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================================
+FOOTER
+========================================================== */
+
+footer{
+
+margin-top:80px;
+
+padding:40px 10%;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+text-align:center;
+
+color:var(--text-light);
+
+background:#06110B;
+
+}
+
+footer p{
+
+font-size:.95rem;
+
+letter-spacing:.5px;
+
+}
+
+/* ==========================================================
+SCROLLBAR
+========================================================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#07140D;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:var(--gold);
+
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:var(--gold-light);
+
+}
+/* ==========================================================
+RESPONSIVE (1400px)
+========================================================== */
+
+@media(max-width:1400px){
+
+.hero h1{
+
+font-size:4.5rem;
+
+}
+
+.section{
+
+padding:100px 8%;
+
+}
+
+.grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ==========================================================
+RESPONSIVE (1100px)
+========================================================== */
+
+@media(max-width:1100px){
+
+.hero{
+
+padding:140px 8%;
+
+}
+
+.hero h1{
+
+font-size:4rem;
+
+}
+
+.hero h3{
+
+font-size:1.7rem;
+
+}
+
+.timeline{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media(max-width:900px){
+
+.hero{
+
+min-height:85vh;
+
+}
+
+.hero h1{
+
+font-size:3.4rem;
+
+}
+
+.hero h3{
+
+font-size:1.5rem;
+
+}
+
+.section h2{
+
+font-size:2.5rem;
+
+}
+
+.timeline{
+
+grid-template-columns:1fr;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+.timeline-card{
+
+padding:30px;
+
+}
+
+.card{
+
+padding:30px;
+
+}
+
+.grid div{
+
+padding:28px;
+
+}
+
+}
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media(max-width:600px){
+
+.hero{
+
+padding:120px 25px 80px;
+
+}
+
+.hero h1{
+
+font-size:2.8rem;
+
+line-height:1.2;
+
+}
+
+.hero h3{
+
+font-size:1.2rem;
+
+}
+
+.hero p{
+
+font-size:1rem;
+
+line-height:1.9;
+
+}
+
+.section{
+
+padding:70px 25px;
+
+}
+
+.section h2{
+
+font-size:2rem;
+
+}
+
+.section p{
+
+font-size:.98rem;
+
+line-height:1.8;
+
+}
+
+.primary-btn{
+
+display:block;
+
+width:100%;
+
+text-align:center;
+
+padding:16px;
+
+}
+
+.timeline-card{
+
+padding:24px;
+
+}
+
+.card{
+
+padding:24px;
+
+}
+
+.grid div{
+
+padding:22px;
+
+font-size:.95rem;
+
+}
+
+footer{
+
+padding:30px 20px;
+
+}
+
+}
+
+/* ==========================================================
+SMALL DEVICES
+========================================================== */
+
+@media(max-width:380px){
+
+.hero h1{
+
+font-size:2.3rem;
+
+}
+
+.hero h3{
+
+font-size:1rem;
+
+}
+
+.section h2{
+
+font-size:1.8rem;
+
+}
+
+.primary-btn{
+
+font-size:.95rem;
+
+}
+
+}
+
+/* ==========================================================
+UTILITY
+========================================================== */
+
+.gold{
+
+color:var(--gold);
+
+}
+
+.center{
+
+text-align:center;
+
+}
+
+.mt-1{
+
+margin-top:20px;
+
+}
+
+.mt-2{
+
+margin-top:40px;
+
+}
+
+.mt-3{
+
+margin-top:60px;
+
+}
+
+.shadow{
+
+box-shadow:0 25px 60px rgba(0,0,0,.30);
+
+}
+
+.round{
+
+border-radius:24px;
+
+}
+
+.glass{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+}
