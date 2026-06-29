@@ -434,5 +434,13 @@ message.remove();
 },3000);
 
 },800);
+function logout(){
+
+    localStorage.removeItem("koraLoggedIn");
+    localStorage.removeItem("koraUser");
+
+    window.location.href = "index.html";
+
+}
 
 });

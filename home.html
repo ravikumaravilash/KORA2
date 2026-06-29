@@ -52,12 +52,14 @@ KORA
 
 <li>
 
-<a class="nav-btn" href="login.html">
-
-Login
-
+<a href="login.html" id="loginButton" class="btn">
+    Login
 </a>
+<button onclick="logout()">
 
+Logout
+
+</button>
 </li>
 
 </ul>
@@ -631,6 +633,21 @@ Support
 <script src="js/navbar.js"></script>
 
 <script src="js/main.js"></script>
+<script>
+
+const loginButton = document.getElementById("loginButton");
+
+const loggedIn = localStorage.getItem("koraLoggedIn");
+
+if(loggedIn === "true"){
+
+    loginButton.innerHTML = "Dashboard";
+
+    loginButton.href = "dashboard.html";
+
+}
+
+</script>
 
 </body>
 

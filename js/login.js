@@ -10,15 +10,16 @@ const password=document.getElementById("password").value;
 
 const error=document.getElementById("error");
 
-if(username==="admin" && password==="kora2026"){
+if (username === "admin" && password === "kora2026") {
 
-window.location.href="home.html";
+    localStorage.setItem("koraLoggedIn", "true");
+    localStorage.setItem("koraUser", "Admin");
 
-}
+    window.location.href = "home.html";
 
-else{
+} else {
 
-error.innerHTML="Invalid Username or Password.";
+    error.innerHTML = "Invalid Username or Password.";
 
 }
 
